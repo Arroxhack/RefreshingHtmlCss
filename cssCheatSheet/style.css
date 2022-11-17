@@ -42,9 +42,9 @@ a:active{ /* active means that it does something when you click on it for an ins
     color: blue;
 }
 
-a:visited{ /* it does something if you already went to the href */
-    /* color: lightgreen; */
-}
+/* a:visited{ it does something if you already went to the href
+    color: lightgreen;
+} */
 
 .container{
     width: 80%; /* total width of the content inside, pxls are not responsive so its better to use PORCENTAGE to resize when viewport changes */
