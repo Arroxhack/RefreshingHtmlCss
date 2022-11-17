@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <!-- <style type="text/css"> /* Don't do this either (INTERNAL) */
+        h1{
+            color: aqua; /* inline beats internal  */
+        }
+        body{
+            background-color: white;
+        }
+    </style> -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- this links our style.css file to this html file -->
+</head>
+<body>
+    <!-- <h2 style="color: red;">Hello World</h2> --> <!-- DON'T DO THIS (INLINE) -->
+    <p id="p1">Test RGBA</p>
+    <p id="p2">Test RGBA</p>
+    <p id="p3">Test RGBA</p>
+
+    <div class="container">
+
+        <div class="box-1">
+            <h1>Hello World</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quo sunt, laudantium obcaecati odit ipsam velit impedit pariatur modi, temporibus numquam explicabo quod, atque labore. Aliquid sed exercitationem soluta corporis.</p>
+        </div>
+
+        <div class="box-2">
+            <h1>Goodbye World</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quo sunt, laudantium obcaecati odit ipsam velit impedit pariatur modi, temporibus numquam explicabo quod, atque labore. Aliquid sed exercitationem soluta corporis.</p>
+            <a class="button" href="#">Read More</a>
+        </div>
+
+        <div class="div-categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Category 1</a></li> <!-- href ="#" just go to the same route -->
+                <li><a href="#">Category 2</a></li> 
+                <li><a href="#">Category 3</a></li> 
+                <li><a href="#">Category 4</a></li> 
+                <li><a href="testt.html">Category 5</a></li> 
+            </ul>
+        </div>
+        <form class="my-form" action="">
+
+            <div class="form-group">
+                <label for="">Name:</label>
+                <input type="text" name="name" id="">
+            </div>
+
+            <div class="form-group">
+                <label for="">Email:</label>
+                <input type="text" name="email" id="">
+            </div>
+
+            <div class="form-group">
+                <label for="">Message:</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <input class="button" type="submit" value="Submit" name="">
+
+        </form>
+        
+        <div class="block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto ea saepe placeat voluptatibus ab id, tenetur consequatur quasi reiciendis.</p>
+        </div>
+
+        <div class="block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto ea saepe placeat voluptatibus ab id, tenetur consequatur quasi reiciendis.</p>
+        </div>
+
+        <div class="block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto ea saepe placeat voluptatibus ab id, tenetur consequatur quasi reiciendis.</p>
+        </div>
+
+        <div class="clr"></div>
+
+        <div id="main-block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto ea saepe placeat voluptatibus ab id, tenetur consequatur quasi reiciendis.</p>
+        </div>
+
+        <div id="sidebar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto ea saepe placeat voluptatibus ab id, tenetur consequatur quasi reiciendis.</p>
+        </div >
+
+        <div class="clr"></div>
+        <!-- !!!! background images -->
+        <div class="p-box"> 
+            <h1>Hello</h1>
+            <h2>Goodbye</h2>
+        </div>
+
+        <ul class="my-list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+
+    </div> <!-- container ends -->
+
+    <a class="button fix-me" href="">Hello</a> <!-- 2 clases -->
+
+    </body>
+</html>

@@ -1,0 +1,247 @@
+
+/* * stands for everything !!!!!!!! */
+/* this is called a reset */
+/* *{   
+    margin: 0;
+    padding: 0;
+} */
+
+h2{ /* inline beats external */
+    color: black;
+    margin: 0;
+}
+
+#p1 {background-color: rgba(255, 0, 0, 0.3); margin: 0;}  /* red with opacity */
+#p2 {background-color: rgba(0, 255, 0, 0.3); margin: 0;}  /* green with opacity */
+#p3 {background-color: rgba(0, 0, 255, 0.3); margin: 0;}  /* blue with opacity */
+
+body{
+    /* color */
+    background-color: #f4f4f4; /* hexadecimal value for light gray */
+    color: #555555; /* hexadecimal value for dark gray */
+    color: rgb;
+    /* font */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal; /* thickness of the letter */ 
+    /* font: normal 20px Arial, Helvetica, sans-serif; */ /* same as doing the ones above */
+    line-height:1.6em; /* espacio entre lineas, you can use pixels as well */
+    margin: 0; /* importante para cubrir todo creo */
+}
+
+a{ /* this will apply to any link on the page */
+    text-decoration: none; /* this gets rid of the anoying underline */
+    color: #000; /* gets rid of the default blue */
+}
+
+a:hover{ /* way to indicate the hover -> :hover */
+    color: red; /* color red when they r hovered */
+}
+
+a:active{ /* active means that it does something when you click on it for an instance */
+    color: blue;
+}
+
+a:visited{ /* it does something if you already went to the href */
+    /* color: lightgreen; */
+}
+
+.container{
+    width: 80%; /* total width of the content inside, pxls are not responsive so its better to use PORCENTAGE to resize when viewport changes */
+    margin: auto; /* margin auto sets auto margin on all sides */
+    /* margin and padding shortcut top right bottom left // if top an bottom, left and right are the same: top right // all equal: top */
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px; /* remember top/button 10, left/right 15 */
+    border: none;
+}
+
+.button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.clr{
+    clear: both; /* clears any floats above it */
+}
+
+.box-1{
+    background-color: #333333;
+    color: #fff;
+    /* border */
+    /* border-right: 5px red solid; */ /* size color style */
+    /* border-left: 5px red solid; */
+    border: 5px red solid; /* size color style */
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-width: 5px;
+    border-top-style: dotted;
+    /* padding */
+    /* padding-top: 20px; */
+    padding: 20px;
+    /* margin */
+    /* margin-top: 20px; */
+    margin: 20px 0;
+}
+
+.box-1 h1{ /* im targeting any h1 within the class box-1 */
+    /* font  */
+    font-family: Tahoma;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline; /* underline */
+    text-transform: uppercase; /* mayusculas */
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px #ccc dotted;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.div-categories{ 
+    /* border padding */
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.div-categories h2{ /* targeting h2 inside */
+    text-align: center;
+}
+
+.div-categories ul{ /* targeting ul inside */
+    padding: 0;
+    padding-left: 20px;
+    /* list-style: square; */
+    list-style: none; /* le saco o cambio los puntitos */
+}
+
+.div-categories li{
+    padding-bottom:6px;
+    border-bottom: dotted 3px #333;
+    list-style-image: url("check.png"); /* better use an image and position it accordingly */
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{ /* targeting every form-group inside my-form */
+    padding-bottom: 15px;
+}
+
+.my-form label{ /* targeting labels inside my-form */
+    display: block; /* paso de inline a block para que esten en lineas distintas */
+}
+
+.my-form input[type="text"], .my-form textarea{ /* [type="text"] -> this way it just targets type text inputs and not submit button */
+    padding: 8px;
+    width: 100%; /* width to be 100% of it container */
+}
+
+.block{ 
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing:border-box; /* this makes border and padding into consideration when applying width */
+} /* flex box makes all of this easier */
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box; /* this makes border and padding into consideration when applying width */
+} 
+
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box; /* this makes border and padding into consideration when applying width */
+} 
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 20px;
+    position: relative; /* position relative so the elemts inside can be moved */
+    /* !!!! background images */
+    background-image: url("/cssCheatSheet/backgroundImg.jpg");
+    background-repeat: no-repeat;
+    /* background-position: 200px 200px; */ /* it pushes the img 200px left and down 200px */
+    background-position:center center;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+/* pseudo elements */
+.my-list li:first-child{ /* pseudo-class (hover is an example)*/
+    background: red ; /* dont need to use background color, we can use background and then use either a color or an image */
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    color: red;
+    background-color: coral;
+}
+
+h1{
+    color: #00ff00;
+}
+
+p{
+    color: rgb(0, 0, 255);
+} */

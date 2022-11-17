@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+</head>
+<body>
+    <a href="semanticTags.html">Go to My blog</a>
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <br>
+
+    <!-- Paragraph (default display block, margin by default) -->
+    <!-- em -->
+    <!-- strong -->
+    <!-- a (link) href (where to link) -->
+    <p>Paragraph</p>
+    <p>
+        Lorem ipsum dolor <em> sit amet consectetur adipisicing elit.</em> Debitis, dolores iusto illum odio temporibus molestiae consequatur ratione dicta facere repudiandae nemo sapiente omnis obcaecati perspiciatis est numquam corrupti dignissimos maxime.
+    </p> 
+    <p>
+        Lorem ipsum dolor <strong> sit amet consectetur adipisicing elit.</strong> Sit deleniti et tenetur molestiae. Exercitationem, vitae magnam aliquam fugiat sint suscipit molestias ea ut ex. Voluptate minus nostrum ex alias officia.
+    </p>
+    <p>
+        <a href="http://google.com" target="_blank">Lorem ipsum dolor sit,</a>amet consectetur adipisicing elit.<a href="about.html">Ipsam, non.</a>
+    </p>
+
+    <br>
+
+    <!-- lists ul(block, with default padding) ol(solo cambia que en vez de punto hay numerito) -->
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ul>
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ol>
+
+    <br>
+
+    <!-- table / thead(tablehead) / tbody(tablebody) / tr(table row) / th(table heading) / td(table cell)  we dont use tables for our layout-->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Julian</td>
+                <td>julian.sonido@gmail.com</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Laura</td>
+                <td>laurines@gmail.com</td>
+                <td>62</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- forms ,label, input, select, option, textarea, div, input type, placeholder -->
+    <form action="about.html"> <!-- aca es a donde va a parar luego del submit -->
+        <div>
+            <label for="">First Name</label>
+            <input type="text" name="firstName" id="" placeholder="Enter first name">
+        </div>
+        <br> <!-- agregue este br porque no estamo usando css aun -->
+        <div>
+            <label for="">Last Name</label>
+            <input type="text" name="lastName" id="">
+        </div>
+        <br> <!-- agregue este br porque no estamo usando css aun -->
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="lastName" id=""> <!-- email adds validation -->
+        </div>
+        <br>
+        <div>
+            <label for="">Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="">Gender</label>
+            <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Age</label>
+            <input type="number" name="age" value="30">
+        </div>
+        <br>
+        <div>
+            <label for="">Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <!-- hr (horizontal rule)-->
+    <hr>
+    <!-- <br/> es lo mismo desde html 5 --> <!-- It pushes down a line -->
+    <br>
+
+    <!-- Button -->
+    <button onclick="someFunction">Click Me</button> <!-- you add events with js to make it work -->
+    
+    <br>
+
+    <!-- Image -->
+    <img src="https://fakeimg.pl/420x320/ff0000%2C128/333333%2C255/?text=Sample&font=lobster" alt="Sample img"> <!-- its a self closing tag -->
+    <img src="sample.jpg" alt="some wheat">
+    <div>
+        <img src="/Images/sample.jpg" alt="same wheat" width="200">
+    </div>
+    <a href="/Images/sample.jpg">
+        <img src="/Images/sample.jpg" alt="same wheat">
+    </a>
+
+    <br>
+
+    <!-- Quotations -->
+    <blockquote cite="http://traversymedia.com">
+        Lorem ipsum dolor sit amet.
+    </blockquote>
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p> <!-- abbreviation -->
+    <p> <cite>crash course</cite>  by Brad Traversy</p>
+
+    <span>HOLA</span>
+    <span>HOLA</span>
+    <div style="margin-top:800px"></div>
+</body>
+</html>
