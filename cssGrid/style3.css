@@ -1,0 +1,14 @@
+.wrapper{
+    display: grid;
+}
+
+.wrapper div{ /* no grid, just to see better */
+    background-color: #eee;
+    padding: 1em;
+}
+.wrapper div:nth-child(odd){ /* no grid, just to see better */
+    background-color: #ddd;
+}
+
+
+

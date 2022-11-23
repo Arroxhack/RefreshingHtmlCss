@@ -1,0 +1,24 @@
+{
+  "name": "htmlandcss",
+  "version": "1.0.0",
+  "description": "Just a practice repo",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./Tailwind/src/input.css -o ./Tailwind/src/css/main.css", 
+    "watch": "tailwindcss -i ./Tailwind/src/input.css -o ./Tailwind/src/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arroxhack/RefreshingHtmlCss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arroxhack/RefreshingHtmlCss/issues"
+  },
+  "homepage": "https://github.com/Arroxhack/RefreshingHtmlCss#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

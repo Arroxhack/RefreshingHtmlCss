@@ -1,0 +1,39 @@
+Manage landing webPage (FrontEnd mentor challenge from FrontEnd mentor website https://www.frontendmentor.io)
+
+
+Instalation:
+
+npm init -y (initialize package json file)
+
+npm i -D tailwindcss (install tailwind as a dev dependency)
+
+npx tailwindcss init (tailwind config file, here we can add custom colors, etc)
+
+(we add tailwind directives to css, look in documentation)
+
+
+
+
+Tailwind properties:
+
+relative: positin relative.
+container: makes a container adjusting screen sizes.
+m: margin.
+mt-3: margin top 0.75rem.
+mx: margin on the x axis (margin right and left).
+my: margin on the y axis (margin top an bottom).
+mx-auto: it puts the element in the middle.
+
+bg: background.
+
+p-6: padding 1.5rem.
+pt-2: padding top 0.5rem.
+
+flex: items inside on row by default.
+flex-col: items inside on column.
+flex.items-center: align-items: center; .
+flex.items-center.justify-between: align-items: center; justify-content:between; .
+flex.space-x-6: espaciar los elementos dentro en el eje x por 6 que es 1.5rem.
+hidden :hace desaparecer.
+hidden md:flex space-x-6: on medium screens and up it shows, on smaller screens it doesnt.
+hover:text-darkGrayishBlue: way of doing a hover.

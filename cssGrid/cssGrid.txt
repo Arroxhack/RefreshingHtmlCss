@@ -1,0 +1,14 @@
+CSS Grid
+
+FLEXBOX AND GRID DIFFERENCES:
+
+Flexbox (one dimension) (column or row)
+--> 
+
+CSS Grid (two dimensions) (column AND row)
+--> |
+    |
+    v
+
+
+

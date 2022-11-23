@@ -1,0 +1,49 @@
+FLEXBOX
+
+Flexbox is a layout model that provides an easy and clean way to arrange items within a container.
+ 
+
+
+Why flex box: 
+
+-Before flexbox -> %width assignments + floats + margin + padding + math.
+
+-Flexbox is responsive and mobile friendly. 
+-It positions child elements with ease.
+-flex containers margins do not collapse with margins of its containers.
+-Order of elements can easily be changed without editing the source HTML.
+
+FLEXIBLE BOX MODEL CONCEPT > OLD BLOCK MODEL:
+
+-Ability to alter item width and height to best fit in its containers free space.
+-Flexbox is direction agnostic.
+-Built for small-scale layouts while GRID specification is for more large scale.
+
+!!!! How FLEXBOX works:
+
+flex containers -> flex items inside
+
+
+
+
+!!!!!!!!!!!! FLEX PROPEETIES:
+
+display: flex | inline-flex;
+flex-direction: row | column    (horizontal or vertical)
+
+flex-wrap: wrap | nowrap |wrapreverse (if we make windows smaller should they go to next line or wrap)
+flex-basis: <length> (same as width to each flex item)
+
+justify-content: flex-start | flex-end | center | space-between | space-aroud | space-evenly | etc (align to the left we use flex start, right flex end, center center)
+align-self: flex-start | flex-end | center (align for individual flex item)
+align-items: flex-start | flex-end | center (align items across the cross axis )
+align-content: flex-start | flex-end | center (align items across the cross axis )
+
+flex-grow: <number>; (different elements in the row different sizes)
+flex-shrink: <number>; (different elements in the row different sizes)
+flex: <integer>; (flex-grow and flex-shrink together) (8 maximum i think)
+order: <integer>; (change order of elements without changing the html)
+
+
+
+
