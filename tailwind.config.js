@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./Tailwind/public/*.html"],  /* le digo que compile todo lo que este en la carpeta Tailwind que sea un archivo.html */
+  content: ["./Tailwind/*.html"],  /* le digo que compile todo lo que este en la carpeta Tailwind que sea un archivo.html */
   theme: {
     screens:{ /* we specify screen sizes */
       sm: "480px",
