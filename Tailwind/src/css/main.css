@@ -884,10 +884,6 @@ body {
   background-repeat: no-repeat;
 }
 
-#crazyButton{
-  min-width: 128px;
-}
-
 @media(max-width: 576px) {
   /* this happens when width is less than 576px */
 
